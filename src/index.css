@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0a0f1a;
+  color: #f3f4f6;
+  margin: 0;
+}
+
+/* Custom range slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: #374151;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #FF6D00;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px rgba(255, 109, 0, 0.4);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #FF6D00;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px rgba(255, 109, 0, 0.4);
+}
+
+/* Number input styling */
+input[type="number"] {
+  background: #0f1724;
+  border: 1px solid #374151;
+  color: #f3f4f6;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #FF6D00;
+  box-shadow: 0 0 0 2px rgba(255, 109, 0, 0.2);
+}
+
+/* Hide number input spinners */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Mission Control dark mode */
+.dark body, html.dark body { background-color: #0b1120; color: #f1f5f9; }
+.dark .bg-gray-50 { background-color: #0b1120; }
+.dark .bg-white { background-color: #111927; }
+.dark .bg-gray-100 { background-color: #0f1729; }
+.dark .text-gray-900 { color: #f1f5f9; }
+.dark .text-gray-800 { color: #e2e8f0; }
+.dark .text-gray-700 { color: #cbd5e1; }
+.dark .text-gray-600 { color: #94a3b8; }
+.dark .text-gray-500 { color: #64748b; }
+.dark .border-gray-200 { border-color: #1e293b; }
+.dark .border-gray-300 { border-color: #334155; }
+.dark .shadow-lg, .dark .shadow-md, .dark .shadow-sm, .dark .shadow { box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+.dark input, .dark select { background-color: #1e293b; border-color: #334155; color: #f1f5f9; }
+.dark .bg-blue-600 { background-color: #0891b2; }
+.dark .text-blue-600 { color: #22d3ee; }
+.dark .recharts-text { fill: #94a3b8 !important; }
+.dark .recharts-cartesian-grid line { stroke: #1e293b !important; }
+.dark .recharts-legend-item-text { color: #94a3b8 !important; }
+.dark .recharts-tooltip-wrapper .recharts-default-tooltip { background-color: #1e293b !important; border-color: #334155 !important; color: #e2e8f0 !important; }
