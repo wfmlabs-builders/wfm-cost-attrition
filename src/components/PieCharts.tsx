@@ -50,7 +50,7 @@ export function CategoryPie({
           Math.round(onboardingPct * 100),
           Math.round(stpPct * 100),
         ],
-        backgroundColor: ['#FF6D00', '#00A3A1', '#374151'],
+        backgroundColor: ['#22d3ee', '#00A3A1', '#374151'],
         borderColor: ['#CC5700', '#008381', '#1f2937'],
         borderWidth: 2,
       },

@@ -24,11 +24,11 @@ export default function LearningCurveChart({ data, tenureAHT }: LearningCurveCha
       {
         label: 'New Hire AHT',
         data: data.map((d) => Math.round(d.aht)),
-        borderColor: '#FF6D00',
+        borderColor: '#22d3ee',
         backgroundColor: 'rgba(255, 109, 0, 0.08)',
         fill: true,
         tension: 0.4,
-        pointBackgroundColor: '#FF6D00',
+        pointBackgroundColor: '#22d3ee',
         pointBorderColor: '#1a2332',
         pointBorderWidth: 1,
         pointRadius: 3,
